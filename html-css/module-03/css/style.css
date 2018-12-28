@@ -1,7 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.conteiner {
+width: 900px;
+margin: 0 auto;    
 }
 
 .header {
@@ -26,14 +31,23 @@ text-align: justify;
 
 .nav-list {
 text-align: center;
-margin-bottom: 30px;
+padding: 20px;
+font-size:0;
 }
 
 .list-item {
 list-style: none;
 display: inline-block;
-margin: 0 20px 0 0;
-padding: 20px;
+margin: 0 30px 0 0;
+font-size:16px;
+}
+
+.list-item-right {
+margin-right: 0;
+}
+
+.list-item-r {
+margin-right: 50px;
 }
 
 .nav-link {
@@ -41,77 +55,62 @@ text-decoration: none;
 color: slategrey;
 }
 
-.news-wrapper {
+.news-lifestyle {
 margin: 0 auto;    
-box-sizing: 1000px;
+box-sizing: 900px;
 text-align: center;
 display: inline-block;
-}
-
-.news-lifestyle {
+font-size: 0;
 margin-bottom: 30px;
-display: inline-block;
-width: calc(30% - 4px);
+width: calc(50% - 4px);
 }
 
 .news-article__list {
-font-size: 0;
+font-size: 14px;
 }
 
 .news-article__item {
-font-size: 14px;
 list-style: none;
-display: inline-block;
-margin: 0 0 50px 0;
+margin: 0 0 30px 0;
 padding: 20px;
-}
-
-.centre-wrapper {
-margin: 0 auto;   
-box-sizing: 900px;
-text-align: center;
-display: inline-block;
 }
 
 .centre-lifestyle {
-margin-bottom: 30px;
-display: inline-block;
-width: calc(30% - 4px);
-}
-
-.centre-article__list {
-font-size: 0;
-}
-
-.centre-article__item {
-font-size: 14px;
-list-style: none;
-display: inline-block;
-margin: 0 0 50px 0;
-padding: 20px;
-}
-
-.last-wrapper {
 margin: 0 auto;   
 box-sizing: 900px;
 text-align: center;
 display: inline-block;
+font-size: 0;
+margin-bottom: 30px;
+width: calc(50% - 4px);
+}
+
+.centre-article__list {
+font-size: 14px;
+}
+
+.centre-article__item {
+list-style: none;
+margin: 0 0 30px 0;
+padding: 20px;
 }
 
 .last-lifestyle {
-margin-bottom: 30px;
+margin: 0 auto;   
+box-sizing: 900px;
+text-align: center;
 display: inline-block;
-width: calc(30% - 4px);
+font-size: 0;
+margin-bottom: 30px;
+width: calc(50% - 4px);
 }
 
 .last-article__list {
-font-size: 0;
+font-size: 14px;
 }
 
 .last-article__item {
-font-size: 14px;
 list-style: none;
-display: inline-block;
 margin: 0 0 30px 0;
 padding: 20px;
 }

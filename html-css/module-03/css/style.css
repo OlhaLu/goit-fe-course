@@ -15,14 +15,19 @@ margin-bottom: 30px;
 }
 
 .title {
-padding: 10px;
+margin-bottom: 20px;
 text-align: left;
 }
 
+.img-position {
+margin-bottom: 20px;
+}
+
 .article-title {
-padding: 20px;
-text-align: left;
-font-size: 24px;
+margin-bottom: 20px;
+text-align: center;
+font-size: 28px;
+color: gray;
 }
 
 .article-text {
@@ -31,7 +36,6 @@ text-align: justify;
 
 .nav-list {
 text-align: center;
-padding: 20px;
 font-size:0;
 }
 
@@ -46,14 +50,15 @@ font-size:16px;
 margin-right: 0;
 }
 
-.list-item-r {
-margin-right: 50px;
-}
-
 .nav-link {
+display: block;
 text-decoration: none;
 color: slategrey;
 }
+
+.nav-link:hover {
+color:blue;
+} 
 
 .news-lifestyle {
 margin: 0 auto;
@@ -61,71 +66,37 @@ padding: 10px;
 box-sizing: 900px;
 text-align: center;
 display: inline-block;
-font-size: 0;
-margin-bottom: 30px;
-width: calc(50% - 4px);
 }
 
 .news-article__list {
-font-size: 14px;
+display: inline-block;
+list-style: none;
+margin-bottom: 40px;
+font-size: 0;
+width: calc(50% - 4px);
 }
 
 .news-article__item {
 list-style: none;
 display: inline-block;
 margin-right: 10px;
-}
-
-.centre-lifestyle {
-margin: 0 auto;
-padding: 10px;
-box-sizing: 900px;
-text-align: center;
-display: inline-block;
-font-size: 0;
-margin-bottom: 30px;
-width: calc(50% - 4px);
-}
-
-.centre-article__list {
 font-size: 14px;
-}
-
-.centre-article__item {
-list-style: none;
-display: inline-block;
-margin-right: 10px;
-}
-
-.last-lifestyle {
-margin: 0 auto;
-padding: 10px;
-box-sizing: 900px;
-text-align: center;
-display: inline-block;
-font-size: 0;
-margin-bottom: 30px;
-width: calc(50% - 4px);
-}
-
-.last-article__list {
-font-size: 14px;
-}
-
-.last-article__item {
-list-style: none;
-display: inline-block;
-margin-right: 10px;
-padding: 10px;
 }
 
 .button-center {
 display: block;
 margin: 0 auto;
-width: 130px;
-height: 100%;
+padding: 15px 25px;
+width: 150px;
 text-align: center;
 outline: none;
-font-size: 24px;
-padding: 10px 0 50px 0;
+font-size: 20px;
+cursor: pointer;
+border: 2px solid grey;
+background: rgb(221, 215, 215);
+}
+
+.button-center:hover {
+color: ghostwhite;
+background-color: gray;
 }

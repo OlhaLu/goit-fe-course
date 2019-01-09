@@ -25,9 +25,8 @@ margin-bottom: 20px;
 
 .article-title {
 margin-bottom: 20px;
-text-align: center;
-font-size: 28px;
-color: gray;
+text-align: left;
+font-size: 24px;
 }
 
 .article-text {
@@ -61,10 +60,9 @@ color:blue;
 } 
 
 .news-lifestyle {
-margin: 0 auto;
-padding: 10px;   
+margin: 0 auto; 
+padding-bottom: 10px;
 box-sizing: 900px;
-text-align: center;
 display: inline-block;
 }
 
@@ -73,14 +71,20 @@ display: inline-block;
 list-style: none;
 margin-bottom: 40px;
 font-size: 0;
-width: calc(50% - 4px);
 }
 
 .news-article__item {
 list-style: none;
 display: inline-block;
-margin-right: 10px;
+width: 420px;
 font-size: 14px;
+color: grey;
+margin-bottom: 30px;
+}
+
+.news-article__item:nth-child(odd) {
+margin-right: 60px;
+/* margin-right: calc((900px - 420px * 2) - 8px); */
 }
 
 .button-center {

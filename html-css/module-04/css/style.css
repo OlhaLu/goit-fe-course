@@ -10,45 +10,54 @@ font-family: "Open Sans", sans-serif;
 }
 
 .conteiner {
-width: 1110px;
+width: 1200px;
 margin: 0 auto;
 margin-bottom: 100px;
 }
 
 .header {
-padding: 50px;
+padding: 45px;
 margin: 0 auto;
 }
 
-.logo {
+.nav-list {
+list-style: none;
+float: right;
+}
 
+.logo {
+display: inline-block;
+float: left;
+font-size: 30px;
+line-height: 32px;
+letter-spacing: 0px;
+color: #444040;
+font-family: "Roboto";
+}
+
+.logo:first-letter {
+color: #1abc9c;
+}
+ 
+.list-item {
+display: inline-block;
+float: left;
+font-size: 14px;
+letter-spacing: 0px;
+line-height: 11px;
+color:black;
+margin-right: 30px;
 }
 
 .list-item-right {
 margin-right: 0px;
 }
-
-.nav-list {
-list-style: none;
-text-align: right;
-}
-
-.list-item {
-display: inline-block;
-font-size:0;
-margin-right: 30px;
-
-}
-
+    
 .nav-link {
-display: inline-block;
 text-decoration: none;
-font-size: 14px;
 letter-spacing: 0px;
-line-height: 11px;
-color: #1abc9c;
+color: black;
 font-weight: bold;
-color:black;
 text-transform: uppercase;
 }
 
@@ -58,25 +67,27 @@ color: turquoise;
 
 
 
+.first {
+text-align: center;
+font-size: 48px;
+line-height: 32px;
+color: #515151;
+margin-bottom: 130px;
+}
+
 
 
 .web-products {
 width: 1110px;
 margin: 0 auto;
-text-align: center;
-font-size: 48px;
-line-height: 32px;
-color: #515151;
 margin-bottom: 100px;
 }
-
 
 .products-list {
 display: inline-block;
 list-style: none;
 text-align: left;
 font-size: 0px;
-margin-top: 130px;
 }
 
 .products-item {
@@ -91,39 +102,52 @@ font-family: "Roboto", sans-serif;
 font-weight: 800;
 }
 
-.title {
-color: white;
-background-color: #515151;
-
-}
-
-.price {
-color: white;
-background-color: silver;
-}
-
 .products-item:nth-child(4n) {
 margin-right: 0px;
 }
 
+.title {
+display: inline-block;
+float: left;
+line-height: 40px;
+width: 200px;
+height: 40px;
+text-align: left;
+color: white;
+background-color: #515151;
+margin-bottom: 30px;
+}
+
+.price {
+display: inline-block;
+float: right;
+line-height: 40px;
+width: 55px;
+height: 40px;
+text-align: center;
+color: white;
+background-color: silver;
+margin-bottom: 30px;
+}
 
 
 
-
-.news {
-width: 1110px;
-margin: 0 auto;
+.second {
 text-align: center;
 font-size: 48px;
 line-height: 32px;
 color: #555252;
+margin-bottom: 120px;
+}
+
+.news {
+width: 1110px;
+margin: 0 auto;
 }
 
 .news-list {
 display: inline-block;
 list-style: none;
-margin-bottom: 40px;
-margin-top: 130px;
 font-size: 0;
 text-align: left;
 }
@@ -132,6 +156,7 @@ text-align: left;
 display: inline-block;
 font-size: 14px;
 width: 350px;
+
 margin-right: 30px;
 }
 
@@ -144,6 +169,7 @@ font-size: 18px;
 letter-spacing: 0px;
 line-height: 26px;
 color: #555252;
+margin-bottom: 45px;
 }
 
 
@@ -157,6 +183,7 @@ font-size: 14px;
 letter-spacing: 0px;
 line-height: 26px;
 color: #555252;
+margin-bottom: 15px;
 }
 
 .button-link {

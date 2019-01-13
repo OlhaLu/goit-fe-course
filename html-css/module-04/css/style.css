@@ -26,7 +26,7 @@ float: right;
 }
 
 .logo {
-display: inline-block;
+list-style: none;
 float: left;
 font-size: 30px;
 line-height: 32px;
@@ -40,12 +40,10 @@ color: #1abc9c;
 }
  
 .list-item {
-display: inline-block;
 float: left;
 font-size: 14px;
 letter-spacing: 0px;
 line-height: 11px;
-color:black;
 margin-right: 30px;
 }
 
@@ -65,7 +63,11 @@ text-transform: uppercase;
 color: turquoise;    
 }
 
-
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+}
 
 .first {
 text-align: center;
@@ -75,7 +77,15 @@ color: #515151;
 margin-bottom: 130px;
 }
 
-
+.first::after {
+content: "";
+border-bottom: 7px solid #4ec6ab;
+display: block;
+width: 136px;
+margin: 0 auto;
+margin-top: 30px;
+margin-bottom: 90px;
+}
 
 .web-products {
 width: 1110px;
@@ -84,14 +94,14 @@ margin-bottom: 100px;
 }
 
 .products-list {
-display: inline-block;
 list-style: none;
 text-align: left;
 font-size: 0px;
+margin-bottom: 100px;
 }
 
 .products-item {
-display: inline-block;
+float: left;
 width: 255px;
 font-size: 18px;
 letter-spacing: 0px;
@@ -106,8 +116,11 @@ font-weight: 800;
 margin-right: 0px;
 }
 
+.products-item:last-child {
+margin-top: 173px;
+}
+
 .title {
-display: inline-block;
 float: left;
 line-height: 40px;
 width: 200px;
@@ -119,7 +132,6 @@ margin-bottom: 30px;
 }
 
 .price {
-display: inline-block;
 float: right;
 line-height: 40px;
 width: 55px;
@@ -130,7 +142,17 @@ background-color: silver;
 margin-bottom: 30px;
 }
 
+.article-link:hover {
+background-color:#4ec6ab;
+}
 
+.title:hover {
+background-color: #1abc9c;
+}
+
+.price:hover {
+background-color: #4ec6ab;
+}
 
 .second {
 text-align: center;
@@ -138,6 +160,16 @@ font-size: 48px;
 line-height: 32px;
 color: #555252;
 margin-bottom: 120px;
+}
+
+.second::after {
+content: "";
+border-bottom: 7px solid #4ec6ab;;
+display: block;
+width: 136px;
+margin: 0 auto;
+margin-top: 30px; 
+margin-bottom: 80px;
 }
 
 .news {
@@ -156,7 +188,6 @@ text-align: left;
 display: inline-block;
 font-size: 14px;
 width: 350px;
-
 margin-right: 30px;
 }
 
@@ -172,11 +203,15 @@ color: #555252;
 margin-bottom: 45px;
 }
 
-
-!! width: 136px;
+.article-title::after {
+content: "";
+display: block;
+border-bottom: 2px solid #4ec6ab;
+width: 120px;
 height: 3px;
-background-color: #4ec6ab;
-
+margin-top: 15px;
+margin-bottom: 25px;
+}
 
 .article-text {
 font-size: 14px;

@@ -73,8 +73,10 @@ color: #1abc9c;
 }
 
 .wrapper-slider {
-background-color: rgba(0, 0, 0, 0.6);
-background-size: 100%;
+background-image: linear-gradient(to top, rgb(24, 24, 25), 100%, transparent 300%), 
+url(../img/img-slide.png);
+width: 1600px;
+height: 600px;
 }
     
 .web-slider {
@@ -140,6 +142,7 @@ background-size: 100%;
 
 .collection {
 margin: 0 auto;
+position: relative;
 }
 
 .title {
@@ -214,21 +217,20 @@ font-family: 'Roboto';
 
 .card-list {
 list-style: none;
-float: left;
+position: absolute;
+display: none;
+background-color: rgba(0, 0, 0, 0.6);
+width: 255px;
+height: 280px;
+top: 0px;
 }
 
 .card-item {
-display: none;
 position: absolute;
-float: left;
-width: 255px;
-height: 280px;
-left: 0;
-top: 0;
-background-color: rgba(0, 0, 0, 0.2);
-}
 
-.collection-item:hover .card-item {
+}
+    
+.collection-item:hover .card-list {
 display: block;
 }
 
@@ -237,37 +239,62 @@ background-color: #1abc9c;
 }
 
 .collection-item:hover .price {
-background: rgba(26, 188, 156, 0.4)
+background: rgba(26, 188, 156, 0.4);
 }
+
 
 .fa-heart,
 .fa-random,
 .fa-clock {
-position: absolute;
 display: block;
-top: 80px;
-left: 40px;
 width: 50px;
 height: 50px;
-font-size: 30px;
+position: absolute;
+margin-right: 15px;
+top: 100px;
+left: 35px;
+font-size: 24px;
 border: #fefefe solid 2px;
 color: #fefefe;
 padding: 10px;
-margin-right: 10px;
+}
+
+.card-item:hover .fa-heart {
+background-color: #1abc9c;
+}
+
+.card-item:hover .fa-random {
+background-color: #1abc9c;
+}
+
+.card-item:hover .fa-clock {
+background-color: #1abc9c;
 }
 
 .fa-shopping-cart {
-position: absolute;
 display: block;
-top: 135px;
-left: 40px;
-font-size: 30px;
-width: 166px;
+position: absolute;
+font-size: 24px;
+width: 180px;
 height: 56px;
+left: 35px;
+top: 160px;
 border: #fefefe solid 2px;
 background-color: #323232;
 color: #fefefe;
 padding: 10px;
+}
+
+.card-item:hover .fa-shopping-cart {
+background-color: #1abc9c;
+}
+
+.shop {
+text-transform: uppercase;
+font-family: "Roboto";
+font-size: 14px;
+letter-spacing: 1px;
+cursor: pointer;
 }
 
 .footer {

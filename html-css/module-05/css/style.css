@@ -72,24 +72,21 @@ font-weight: bold;
 color: #1abc9c;    
 }
 
-.wrapper-slider {
+.background-image {
 margin: 0 auto;
 }
-      
+
 .web-slider {
-margin: 0 auto;
 position: relative;
 width: 1600px;
-height: 600px;
+min-height: 600px;
 }
 
-.slide {
-list-style: none;
-object-fit: cover;
-position: relative;
+.slider-item {
+position: absolute;
 }
 
-.slide:after {
+.slider-item:after {
 content: '';
 position: absolute;
 top: 0;
@@ -100,10 +97,15 @@ z-index: 1;
 background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
+.slide {
+list-style: none;
+}
+
 .slider-title {
 position: absolute;
-left: 435px;
-top: 160px;
+top: 30%;
+left: 27%;
+transform: translateY(-50%);
 color: white;
 text-transform: uppercase;
 font-size: 60px;
@@ -118,8 +120,9 @@ color: #ff7200;
     
 .slider-text {
 position: absolute;
-left: 435px;
-top: 280px;
+top: 45%;
+left: 27%;
+transform: translateY(-50%);
 color: white;
 text-transform: uppercase;
 font-size: 24px;
@@ -129,7 +132,7 @@ z-index: 2;
 
 .prev-side, .next-side {
 position: absolute;
-display: inline-block; 
+display: inline-block;
 width: 100px;
 height: 100px;
 top: 225px;
@@ -139,6 +142,17 @@ padding: 30px 40px;
 background-color: #509d8b;
 color: #fefefe;
 z-index: 2;
+cursor: pointer;
+}
+
+.prev-side:hover {
+background-color: #7bc4b5;
+border: #fefefe 3px solid;
+}
+
+.next-side:hover {
+background-color: #7bc4b5;
+border: #fefefe 3px solid;
 }
     
 .prev-side {
@@ -152,7 +166,6 @@ right: 260px;
 }
 
 .collection {
-margin: 0 auto;
 background-color: #e9f0fd;
 padding: 100px 0 0 0;
 }
@@ -179,16 +192,13 @@ margin-top: 25px;
 }
 
 .collection-list {
-margin: 0 auto;
-position: relative;
-width: 1140px;
 list-style: none;
 text-align: center;
-font-size: 0px;
 padding-bottom: 100px;
 }
     
 .collection-item {
+position: relative;
 float: left;
 width: 255px;
 font-size: 18px;
@@ -229,25 +239,31 @@ font-family: 'Roboto';
 
 .card-list__overlay {
 position: absolute;
-top: 0px;
-}
-
-.card-list {
-list-style: none;
-display: none;
-background-color: rgba(0, 0, 0, 0.6);
+background-color: rgba(0, 0, 0, 0.5);
+border: #fefefe solid 2px;
 width: 255px;
 height: 280px;
+top: 0px;
+left: 0px;
+opacity: 0;
+}
+
+.collection-item:hover .card-list__overlay {
+opacity: 1;
+}
+    
+.card-list {
+position: absolute;
+list-style: none;
 }
 
 .card-item {
-display: inline-block;
+width: 50px;
+height: 50px;
+float: left;
+margin: 0 8px;
 }
     
-.collection-item:hover .card-list {
-display: block;
-}
-
 .collection-item:hover .profile {
 background-color: #1abc9c;
 }
@@ -259,44 +275,45 @@ background: rgba(26, 188, 156, 0.4);
 .fa-heart,
 .fa-random,
 .fa-clock {
-width: 50px;
-height: 50px;
-margin-right: 10px;
-margin-top: 100px;
+position: absolute;
+top: 100px;
 font-size: 24px;
 border: #fefefe solid 2px;
 color: #fefefe;
 padding: 10px;
 margin-bottom: 10px;
+background-color: #323232;
 }
 
 .fa-clock {
 margin-right: 0px;
 }
 
-.card-item:hover .fa-heart {
+.fa-heart:hover {
 background-color: #1abc9c;
 }
 
-.card-item:hover .fa-random {
+.fa-random:hover {
 background-color: #1abc9c;
 }
 
-.card-item:hover .fa-clock {
+.fa-clock:hover {
 background-color: #1abc9c;
 }
 
 .fa-shopping-cart {
+position: absolute;
+top: 160px;
 font-size: 24px;
 width: 180px;
 height: 56px;
 border: #fefefe solid 2px;
 background-color: #323232;
 color: #fefefe;
-padding: 10px;
+padding: 15px 10px;
 }
 
-.card-item:hover .fa-shopping-cart {
+.fa-shopping-cart:hover {
 background-color: #1abc9c;
 }
 
@@ -306,7 +323,7 @@ font-family: "Roboto";
 font-size: 14px;
 letter-spacing: 2px;
 cursor: pointer;
-padding: 0 0 0 15px;
+padding: 10px;
 }
 
 .footer {
@@ -326,5 +343,9 @@ padding: 30px 0;
 }
 
 .footer-title:hover {
-color: #1abc9c;
+color: #6f998f;
+}
+
+.writer {
+color: #1abc9c;  
 }

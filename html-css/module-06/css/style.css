@@ -24,6 +24,7 @@
     .logo {
    font-size: 24px;
    color: var(--icon-color);
+   font-family: var(--nav-title-font);
    font-weight: bold;
    display: block;
    }
@@ -39,23 +40,16 @@
     .nav-list {
     display: flex;
     justify-content: space-between;
-    width: 490px;
+    flex-wrap: wrap;
+    min-width: 490px;
    }
 
     .list-item {
    list-style: none;
    }
 
-    .list-item:hover .nav-link::after {
-    color: #f38181;
-    content: "";
-    border-bottom: 3px solid #f38181;
-    display: block;
-    width: 30px;
-    margin: 0 auto;
-    }
-
     .nav-link {
+   display: block;
    text-decoration: none;
    color: var(--icon-color);
    text-transform: uppercase;
@@ -63,6 +57,20 @@
    transition: color 0.5s linear;
    }
 
+   .nav-link::after {
+    color: #f38181;
+    content: "";
+    border-bottom: 3px solid #f38181;
+    display: block;
+    width: 25px;
+    margin: 0 auto;
+    visibility: hidden;
+    }
+    
+   .list-item:hover .nav-link::after {
+    visibility: visible;
+    }
+    
    .nav-link:hover {
     color: var(--overlay-color);
    }

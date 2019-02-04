@@ -22,7 +22,7 @@
    }
 
     .logo {
-   font-size: 24px;
+   font-size: 30px;
    color: var(--icon-color);
    font-family: var(--nav-title-font);
    font-weight: bold;
@@ -58,17 +58,16 @@
    }
 
    .nav-link::after {
-    color: #f38181;
-    content: "";
-    border-bottom: 3px solid #f38181;
     display: block;
-    width: 25px;
-    margin: 0 auto;
-    visibility: hidden;
+    content: "";
+    height: 3px;
+    background-color: #f38181;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
     }
     
-   .list-item:hover .nav-link::after {
-    visibility: visible;
+   .nav-link:hover::after {
+    transform: scaleX(1);
     }
     
    .nav-link:hover {
@@ -84,10 +83,9 @@
    margin-bottom: 50px;
    }
 
-    .main-title::before {
-    content: "We work with";
+    .pre-content {
     text-transform: none;
-    font-size: 14px;
+    font-size: 24px;
     display: block;
     margin: 0 auto;
     padding: 15px 0;
@@ -112,10 +110,9 @@
     color: var(--title-color);
     }
 
-    .title::before {
-   content: "Who we are";
+    .content {
    text-transform: none;
-   font-size: 14px;
+   font-size: 24px;
    display: block;
    margin: 0 auto;
    padding: 15px 0;
@@ -130,28 +127,56 @@
 
     .cart-item {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     width: 380px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     }
 
-    .icon {
+    .cart-item::before {
+    content: "";
     display: block;
-    padding: 0 30px;
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
-    .cart-link {
-    flex-direction: column;
+    .icon01::before {
+    background-image: url(..//icon/icon01.png);
+    }
+
+    .icon02::before {
+    background-image: url(..//icon/icon02.png);
+    }
+
+    .icon03::before {
+    background-image: url(..//icon/icon03.png);
+    }
+
+    .icon04::before {
+    background-image: url(..//icon/icon04.png);
+    }
+
+    .icon05::before {
+    background-image: url(..//icon/icon05.png);
+    }
+
+    .icon06::before {
+    background-image: url(..//icon/icon06.png);
     }
 
     .text-title {
     text-transform: uppercase;
     color: var(--title-color);
-    padding: 0 0 20px 0;
+    padding: 0 10px;
     }
 
     .discription {
     color: var(--text-color);
+    margin-left: 60px;
+    text-align: justify;
     }
 
     .inform {
@@ -175,6 +200,12 @@
     .inform-item {
     list-style: none;
     position: relative;
+    }
+
+    .inform-item:hover .photo-link {
+    transform: translateX(-10px);  
+    transform: translateY(-10px);
+    transition-duration: 0.2s;
     }
 
     .photo-link {
@@ -209,10 +240,13 @@
     top: 0px;
     left: 0px;
     box-shadow: 10px 10px rgba(149, 225, 211, 1);
+    transition-duration: 0.4s;
     }
        
     .inform-item:hover .overlay {
     opacity: 1;
+    transform: translateX(-10px);  
+    transform: translateY(-10px);
     }
         
     .overlay-list {
@@ -224,6 +258,7 @@
     }
 
     .social {
+    display: block;
     width: 56px;
     height: 56px;
     background-repeat: no-repeat;
@@ -260,6 +295,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    border-top: var(--text-color) 1px solid;
     }
 
     .footer-information {

@@ -126,6 +126,7 @@
     }
 
     .cart-item {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -135,7 +136,10 @@
 
     .cart-item::before {
     content: "";
-    display: block;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    position: absolute;
     width: 30px;
     height: 30px;
     padding: 0 10px;
@@ -170,13 +174,13 @@
     .text-title {
     text-transform: uppercase;
     color: var(--title-color);
-    padding: 0 10px;
+    padding-left: 60px;
     }
 
     .discription {
     color: var(--text-color);
-    margin-left: 60px;
     text-align: justify;
+    padding-left: 60px;
     }
 
     .inform {
@@ -189,7 +193,7 @@
     font-family: var(--main-font);
     font-size: 16px;
     font-weight: 400;
-    padding: 0 0 50px 0;
+    margin-bottom: 50px;
     }
 
     .article-list {
@@ -203,9 +207,8 @@
     }
 
     .inform-item:hover .photo-link {
-    transform: translateX(-10px);  
-    transform: translateY(-10px);
-    transition-duration: 0.2s;
+    transform: translate(-10px, -10px);  
+    transition-duration: 0.8s;
     }
 
     .photo-link {
@@ -235,18 +238,16 @@
     width: 380px;
     height: 470px;
     background-image: linear-gradient(to top, rgba(252, 227, 138, 0.7), rgba(243, 129, 129, 0.8));
-    border: #fefefe solid 2px;
     opacity: 0;
     top: 0px;
     left: 0px;
     box-shadow: 10px 10px rgba(149, 225, 211, 1);
-    transition-duration: 0.4s;
+    transition-duration: 1s;
     }
        
     .inform-item:hover .overlay {
     opacity: 1;
-    transform: translateX(-10px);  
-    transform: translateY(-10px);
+    transform: translate(-10px, -10px);
     }
         
     .overlay-list {

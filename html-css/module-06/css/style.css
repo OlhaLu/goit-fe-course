@@ -74,16 +74,8 @@
     color: var(--overlay-color);
    }
 
-    .main-title {
-   text-align: center;
-   font-family: var(--nav-title-font);
-   font-size: 22px;
-   text-transform: uppercase;
-   color: var(--title-color);
-   margin-bottom: 50px;
-   }
-
-    .pre-content {
+   .pre-content {
+    text-align: center;
     text-transform: none;
     font-size: 24px;
     display: block;
@@ -92,6 +84,15 @@
     font-family: var(--main-title);
     }
 
+    .main-title {
+   text-align: center;
+   font-family: var(--nav-title-font);
+   font-size: 30px;
+   text-transform: uppercase;
+   color: var(--title-color);
+   margin-bottom: 50px;
+   }
+   
     .main-title::after, .title::after {
     content: "";
     border-bottom: 5px solid #f38181;
@@ -101,23 +102,24 @@
     padding: 15px 0;
     }
 
+    .content {
+    text-align: center;
+    text-transform: none;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-family: var(--main-title);
+    }
+
     .title {
     text-align: center;
     font-family: var(--main-font);
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 50px;
     text-transform: uppercase;
     color: var(--title-color);
     }
-
-    .content {
-   text-transform: none;
-   font-size: 24px;
-   display: block;
-   margin: 0 auto;
-   padding: 15px 0;
-   font-family: var(--main-title);
-   }
      
     .cart-list {
     display: flex;
@@ -268,6 +270,7 @@
     background-position: center;
     cursor: pointer;
     border: #f38181 0.5px solid;
+    transition: background-color 0.2s linear;
     }
 
     .facebook {
@@ -336,4 +339,10 @@
     color: #fefefe;
     text-transform: uppercase;
     cursor: pointer;
+    }
+
+    .send-inform:hover {
+    background-color: #fefefe;
+    color: var(--icon-color);
+    font-weight: bold;
     }

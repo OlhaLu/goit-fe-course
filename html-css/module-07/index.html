@@ -9,10 +9,9 @@
 </head>
 
 <body>
-    <div class="wrapper">
-    <header class="header container">
-        <a class="logo">Golden</a>
-            <nav class="header-nav">
+    <header class="header">
+            <nav class="header-nav container">
+                <a class="logo">Golden</a>
                 <ul class="nav-list">
                     <li class="list-item"><a href="#" class="nav-link">Home</a></li>
                     <li class="list-item"><a href="#" class="nav-link">Service</a></li>
@@ -22,8 +21,9 @@
                 </ul>
             </nav>
     </header>
-
-    <section class="collection container">
+<main>
+    <section class="collection">
+        <div class="container">
         <h2 class="collection-title">Service</h2>
         <p class="collection-text">Lorem ipsum dolor, sit amet consectetur</p>
         <ul class="cart-list">     
@@ -40,21 +40,22 @@
                         <p class="discription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore ducimus magnam, pariatur quaerat</p>
                     </li>
         </ul>
+    </div>
     </section>
-</div>
-<div class="background">
-    <section class="inform container">
+    
+    <section class="inform">
+        <div class="container">
         <h2 class="inform-title">Contact Us</h2>
         <p class="inform-text">Lorem ipsum dolor, sit amet consectetur</p>
-        <div class="inputs">
-            <input type="text" class="form" placeholder="Your Name&#42;"></input>
-            <input type="email" class="form" placeholder="Your E-mail&#42;"></input>
-            <input type="text" class="form" placeholder="Subject"></input>
-            <input type="text" class="mess-text" placeholder=" Message&#42;"></input>
-        </div>
+        <form action ="#" method = "get" class="inputs">
+            <input type="text" class="form" name="name" placeholder="Your Name&#42;"></input>
+            <input type="email" class="form" name="email" placeholder="Your E-mail&#42;"></input>
+            <input type="text" class="form" name="issue" placeholder="Subject"></input>
+            <textarea class="mess-text" name="text-message" placeholder=" Message&#42;"></textarea>
+        </form>
         <button type="submit" class="send-inform">Send Message</button>
+    </div>
     </section>
-</div>
-
+</main>
 </body>
 </html>

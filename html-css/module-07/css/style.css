@@ -11,9 +11,7 @@
     }
 
     .header {
-    margin: 0 auto;
     padding: 50px 0;
-    background-color: #ffff;
     }
 
     .container {
@@ -59,9 +57,7 @@
     }
 
     .collection {
-    margin: 0 auto;
     padding-bottom: 100px;
-    background-color: #ffff;
     }
 
     .collection-title {
@@ -169,7 +165,7 @@
     outline: 3px solid #44bd44;
     }
 
-    input:valid:not(:focus),
+    input:valid:not(:focus):required,
     textarea:valid:not(:focus) {
     outline: 3px solid #44bd44;
     }

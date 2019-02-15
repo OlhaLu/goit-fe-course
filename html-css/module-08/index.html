@@ -13,14 +13,16 @@
 
     <body>
 <div class="wrapper">
-    <header class="header conteiner">
-        <a class="logo">Urlaubsglück</a>
-        <div>
-            <button class="form">Log in</button>
-            <button class="form">Sing in</button>
-        </div>
+    <header class="header">
+        <nav class="header-nav container">
+        <a class="logo"><p>Urlaubsglück</p></a>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Log in</li></a>
+            <li class="nav-item"><a href="#" class="nav-link">Sing in</li></a>
+        </ul>
+    </nav>
     </header>
-        <section class="banner conteiner">
+        <section class="banner-text container">
             <h1 class="main-title">Share your holiday dreams</h1>
             <p class="title">And find the perfect partner to fullfill it</p>
             <a class="information" href="#">Find your holiday partner</a>
@@ -28,43 +30,39 @@
     </div>
 
     <main>
-    <section class="content conteiner">
+    <section class="content container">
         <h2 class="content-title">Meet a partner for your best holiday</h2>
         <ul class="content-list">
-            <li class="content-item">
+            <li class="content-item icon01">
             <figure>
                     <img class="photo" src="./img/img01.png" width="120" height="120">
-                    <img class="photo-icon" src="./icon/icon01.png" width="30" height="30">
                     <figcaption>
                         <p class="people-name">Bradley Hunter</p>
                         <p class="peple-inform">Based in Chicago. I love playing tennis and loud music.</p>
                     </figcaption>
                 </figure>
             </li>
-            <li class="content-item">
+            <li class="content-item icon02">
                     <figure>
                             <img class="photo" src="./img/img02.png" width="120" height="120">
-                            <img class="photo-icon" src="./icon/icon02.png" width="30" height="30">
                             <figcaption>
                                 <p class="people-name">Heather Walker</p>
                                 <p class="peple-inform">I'm a happy person that loves cats and climbing on mountains.</p>
                             </figcaption>
                         </figure>
                     </li>
-                    <li class="content-item">
+                    <li class="content-item icon03">
                             <figure>
                                     <img class="photo" src="./img/img03.png" width="120" height="120">
-                                    <img class="photo-icon" src="./icon/icon03.png" width="30" height="30">
                                     <figcaption>
                                         <p class="people-name">Lucas Marsha</p>
                                         <p class="peple-inform">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
                                     </figcaption>
                                 </figure>
                             </li>
-                            <li class="content-item">
+                            <li class="content-item icon04">
                                     <figure>
                                             <img class="photo" src="./img/img04.png" width="120" height="120">
-                                            <img class="photo-icon" src="./icon/icon04.png" width="30" height="30">
                                             <figcaption>
                                                 <p class="people-name">Bradley Hunter</p>
                                                 <p class="peple-inform">Based in Chicago. I love playing tennis and loud music.</p>
@@ -72,8 +70,7 @@
                                         </figure>
                                     </li>
                             </ul>
+                            <button type="button" class="show-more">See other partners</button>
                     </section>
-
-                <button type="button" class="show-more">See other partners</button>
         </main>
 </body> 

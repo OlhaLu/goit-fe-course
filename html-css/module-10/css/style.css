@@ -169,7 +169,7 @@
     color: var(--title-color);
     }
 
-   .ourteam__inform-content {
+   .ourteam__inform-pre__title {
    text-transform: none;
    font-size: 24px;
    display: block;
@@ -303,7 +303,7 @@
     opacity: 0;
     top: 0px;
     left: 0px;
-    box-shadow: 15px 15px rgba(149, 225, 211, 1);
+    box-shadow: 5px 5px rgba(149, 225, 211, 1);
     transition-duration: 0.4s;
     }
        

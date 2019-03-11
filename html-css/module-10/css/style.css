@@ -27,7 +27,7 @@
     background-position: center;
    }
 
-   .banner__section {
+   .header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 140px;
@@ -35,7 +35,7 @@
     align-items: center;
     }
 
-    .main__logo {
+    .site__logo {
    display: block;
    }
 
@@ -46,17 +46,17 @@
     font-weight: bold;
    }
 
-    .menu__nav {
+    .nav__list {
     display: flex;
     justify-content: space-between;
     min-width: 600px;
    }
 
-    .nav__item {
+    .list--item {
    list-style: none;
    }
 
-    .nav__link--icon {
+    .nav--link {
    display: block;
    text-decoration: none;
    color: #ffffff;
@@ -65,7 +65,7 @@
    transition: color 0.5s linear;
    }
 
-   .nav__link--icon::after {
+   .nav--link::after {
     display: block;
     content: "";
     height: 3px;
@@ -74,35 +74,35 @@
     transition: transform 200ms ease-in-out;
     }
     
-   .nav__link--icon:hover::after {
+   .nav--link:hover::after {
     transform: scaleX(1);
     }
     
-   .nav__link--icon:hover {
+   .nav--link:hover {
     color: var(--social-color);
    }
 
-   .nav__svgicon {
+   .nav--icon {
     width: 15px;
     height: 15px;
    }
 
-   .nav__svgicon:hover {
+   .nav--icon:hover {
     fill: var(--social-color);
   }
 
-   .main__header {
+   .banner__title {
     text-align: center;
    }
 
-   .main__header--pretitle {
+   .banner__title--pretitle {
     font-family: var(--main-title);
     font-size: 65px;
     color: #ffffff;
     margin-bottom: 30px;
    }
 
-   .main__header--title {
+   .banner__title--maintitle {
    font-family: var(--nav-title-font);
    color: #ffffff;
    font-weight: bold;
@@ -111,7 +111,7 @@
    margin: 0 0 100px 0;
    }
 
-   .main__header--button {
+   .button {
     width: 145px;
     padding: 10px 0;
     cursor: pointer;
@@ -124,7 +124,7 @@
     text-transform: uppercase;
    }
 
-   .main__header--button:hover {
+   .buttonn:hover {
     color: var(--social-color);
     border: 3px solid var(--social-color);
    }
@@ -132,7 +132,7 @@
 
    /* cart-collection */
 
-    .card__collection--title {
+    .card__maintitle {
    text-align: center;
    font-family: var(--nav-title-font);
    font-size: 22px;
@@ -141,7 +141,7 @@
    margin-bottom: 50px;
    }
 
-    .card__collection--pretitle {
+    .card__pretitle {
     text-transform: none;
     font-size: 24px;
     display: block;
@@ -150,8 +150,8 @@
     font-family: var(--main-title);
     }
 
-    .card__collection--title::after, 
-    .ourteam__inform--title::after {
+    .card__maintitle::after, 
+    .ourteam__maintitle::after {
     content: "";
     border-bottom: 5px solid #f38181;
     display: block;
@@ -160,7 +160,7 @@
     padding: 15px 0;
     }
 
-    .ourteam__inform--title {
+    .ourteam__maintitle {
     text-align: center;
     font-family: var(--main-font);
     font-size: 22px;
@@ -169,7 +169,7 @@
     color: var(--title-color);
     }
 
-   .ourteam__inform--pretitle {
+   .ourteam__pretitle {
    text-transform: none;
    font-size: 24px;
    display: block;
@@ -178,7 +178,7 @@
    font-family: var(--main-title);
    }
      
-    .menu__card {
+    .card__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -240,13 +240,13 @@
     }
 
 
-/* inform-collection */
+/* ourteam-collection */
 
-    .ourteam__inform {
+    .ourteam {
     margin-bottom: 50px;
     }
 
-    .ourteam__artical--text {
+    .ourteam__discription {
     text-align: center;
     color: var(--text-color);
     font-family: var(--main-font);
@@ -255,7 +255,7 @@
     margin-bottom: 50px;
     }
 
-    .menu__ourteam {
+    .ourteam__list {
     display: flex;
     justify-content: space-between;
     }
@@ -363,13 +363,13 @@
     color: var(--overlay-color);
     }
 
-    .form__registration {
+    .registration {
     display: flex;
     justify-content: space-around;
     align-items: center;
     }
 
-    .form__registration--email {
+    .registration__email {
     color: var(--text-color);
     font-family: var(--main-title);
     border: #bfbfbf 2px solid;
@@ -383,7 +383,7 @@
     border: none;
     }
 
-    .form__registration--send {
+    .button__send {
     background-color: var(--icon-color);
     width: 150px;
     height: 40px;

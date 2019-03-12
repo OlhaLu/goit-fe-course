@@ -1,0 +1,60 @@
+
+     .card__list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     }
+ 
+     .card__item {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     width: 380px;
+     margin-bottom: 60px;
+    }
+     
+     .card__item::before {
+     display: block;
+     content: "";
+     width: 30px;
+     height: 30px;
+     padding: 0 10px;
+     background-repeat: no-repeat;
+     background-position: center;
+     }
+
+     .card__item--icon01::before {
+     background-image: url(../images/icons/services/icon01.png);
+     }
+ 
+     .card__item--icon02::before {
+     background-image: url(../images/icons/services/icon02.png);
+     }
+ 
+     .card__item--icon03::before {
+     background-image: url(../images/icons/services/icon03.png);
+     }
+ 
+     .card__item--icon04::before {
+     background-image: url(../images/icons/services/icon04.png);
+     }
+ 
+     .card__item--icon05::before {
+     background-image: url(../images/icons/services/icon05.png);
+     }
+ 
+     .card__item--icon06::before {
+     background-image: url(../images/icons/services/icon06.png);
+     }
+    
+     .card__title {
+     text-transform: uppercase;
+     color: $title-color;
+     padding: 0 10px;
+     }
+ 
+     .card__discription {
+     color: $text-color;
+     margin-left: 60px;
+     text-align: justify;
+     }

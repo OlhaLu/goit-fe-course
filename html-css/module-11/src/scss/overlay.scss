@@ -1,0 +1,52 @@
+    .ourteam__overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    height: 470px;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.7), rgba(243, 129, 129, 0.8));
+    border: $hidden-color solid 2px;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    box-shadow: 5px 5px rgba(149, 225, 211, 1);
+    transition-duration: 0.4s;
+    }   
+       
+    .ourteam__item:hover 
+    .ourteam__overlay {
+    opacity: 1;
+    transform: translateX(-10px);  
+    transform: translateY(-10px);
+    }
+        
+    .overlay__list {
+    display: flex;
+    }
+    
+    .overlay__item {
+    list-style: none;
+    }
+
+    .overlay__link {
+    padding: 12px;
+    display: block;
+    width: 54px;
+    height: 54px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-color: $social-color;
+    background-position: center;
+    cursor: pointer;
+    border: $overlay-color 0.5px solid;
+    }
+
+    .overlay__link:hover {
+    background-color: $icon-color;
+    }
+
+    .overlay__icon {
+    width: 30px;
+    height: 30px;
+    }

@@ -1,0 +1,111 @@
+.banner {
+    background-image: url(../images/banner-img.img);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 1000px;
+    background-position: center;
+   }
+
+   .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+    padding: 25px 0;
+    align-items: center;
+    }
+
+    .site__logo {
+   display: block;
+   }
+
+   .logo__text {
+    color: $text-white-color;
+    font-size: 30px;
+    font-family: $banner-text;
+   }
+
+    .nav__list {
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+   }
+
+    .list--item {
+   list-style: none;
+   }
+
+   .nav--link {
+   display: block;
+   text-decoration: none;
+   color: $text-white-color;
+   text-transform: uppercase;
+   font-size: 14px;
+   transition: color 0.5s linear;
+     }
+
+   .nav--link::after {
+      display: block;
+      content: "";
+      height: 3px;
+      background-color: $social-color;
+      transform: scaleX(0);
+      transition: transform 200ms ease-in-out;
+      }
+
+      .nav--link:hover::after {
+      transform: scaleX(1);
+      }
+    
+      .nav--link:hover {
+      color: $social-color;
+      }
+  
+
+   .nav--icon {
+    width: 15px;
+    height: 15px;
+   }
+
+    .nav--icon:hover {
+    fill: $social-color;
+    }
+
+
+   .banner__title {
+    text-align: center;
+   }
+
+   .banner__title--pretitle {
+    font-family: $main-title;
+    font-size: 65px;
+    color: $text-white-color;
+    margin-bottom: 30px;
+   }
+
+   .banner__title--maintitle {
+   font-family: $banner-text;
+   color: $text-white-color;
+   font-size: 160px;
+   text-transform: uppercase;
+   margin: 0 0 100px 0;
+   }
+
+
+   .button {
+    width: 145px;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 15px;
+    color: $text-white-color;
+    font-family: $banner-text;
+    border: 3px solid $text-white-color;
+    background-color: transparent;
+    text-transform: uppercase;
+   }
+
+    .button:hover {
+    color: $social-color;
+    border: 3px solid $social-color;
+    }
+ 

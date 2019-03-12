@@ -1,0 +1,46 @@
+    .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: $text-color 1px solid;
+    }
+
+    .footer__text {
+    font-size: 16px;
+    }
+
+    .footer__author {
+    text-decoration: none;
+    color: $overlay-color;
+    }
+
+    .registration {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .registration__email {
+    color: $text-color;
+    font-family: $main-title;
+    border: $text-color 2px solid;
+    width: 250px;
+    height: 40px;
+    padding: 8px;
+    }
+
+    input {
+    outline: none;
+    border: none;
+    }
+
+    .button__send {
+    background-color: $icon-color;
+    width: 150px;
+    height: 40px;
+    border: $icon-color 2px solid;
+    color: $hidden-color;
+    text-transform: uppercase;
+    cursor: pointer;
+    }

@@ -1,0 +1,35 @@
+    .maintitle {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $title-color;
+    margin-bottom: 50px;
+    }
+
+    .card__maintitle {
+    font-family: $nav-title-font;
+    }
+
+    .ourteam__maintitle {     
+    font-family: $main-font;
+    }
+
+    .maintitle::after {
+    display: block;
+    content: "";
+    border-bottom: 5px solid $overlay-color;
+    width: 60px;
+    margin: 0 auto;
+    padding: 15px 0;
+    }
+    
+    .pretitle {
+    text-transform: none;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    font-family: $main-title;
+    }
+ 
+   

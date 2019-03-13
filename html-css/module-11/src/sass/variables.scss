@@ -1,3 +1,4 @@
+
 $text-white-color: #ffffff;
 $overlay-color: #f38181;
 $social-color: #fce38a;
@@ -6,7 +7,8 @@ $icon-color: #95e1d3;
 $text-color: #bfbfbf;
 $title-color:  #333333;
 
-@import '../scss/fonts.scss';
+
+@import '../sass/fonts.scss';
 
 $main-font: 'Roboto-Regular', sans-serif;
 $main-font-light: 'Roboto-LightItalic', sans-serif;

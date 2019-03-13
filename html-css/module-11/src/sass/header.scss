@@ -1,5 +1,5 @@
 .banner {
-    background-image: url(../images/banner-img.img);
+    background-image: url(./images/banner-img.img);
     background-repeat: no-repeat;
     margin: 0 auto;
     max-width: 100%;
@@ -7,7 +7,7 @@
     background-position: center;
    }
 
-   .header {
+  .header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 140px;
@@ -15,7 +15,7 @@
     align-items: center;
     }
 
-    .site__logo {
+  .site__logo {
    display: block;
    }
 
@@ -25,13 +25,13 @@
     font-family: $banner-text;
    }
 
-    .nav__list {
+  .nav__list {
     display: flex;
     justify-content: space-between;
     min-width: 600px;
    }
 
-    .list--item {
+  .list--item {
    list-style: none;
    }
 
@@ -42,38 +42,36 @@
    text-transform: uppercase;
    font-size: 14px;
    transition: color 0.5s linear;
-     }
-
-   .nav--link::after {
-      display: block;
-      content: "";
-      height: 3px;
-      background-color: $social-color;
-      transform: scaleX(0);
-      transition: transform 200ms ease-in-out;
-      }
-
-      .nav--link:hover::after {
-      transform: scaleX(1);
-      }
-    
-      .nav--link:hover {
-      color: $social-color;
-      }
-  
-
-   .nav--icon {
-    width: 15px;
-    height: 15px;
-   }
-
-    .nav--icon:hover {
-    fill: $social-color;
+       
+    &:hover {
+    color: $social-color;
     }
+  }
 
+  .nav--link::after {
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: $social-color;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+  }
 
-   .banner__title {
-    text-align: center;
+  .nav--link:hover::after {
+  transform: scaleX(1);
+  }
+
+.nav--icon {
+  width: 15px;
+  height: 15px;
+   
+  &:hover {
+  fill: $social-color;
+  }
+}
+
+  .banner__title {
+  text-align: center;
    }
 
    .banner__title--pretitle {
@@ -102,10 +100,10 @@
     border: 3px solid $text-white-color;
     background-color: transparent;
     text-transform: uppercase;
-   }
-
-    .button:hover {
+ 
+    &:hover {
     color: $social-color;
     border: 3px solid $social-color;
     }
+  }
  

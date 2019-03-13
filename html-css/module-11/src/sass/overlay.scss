@@ -40,10 +40,10 @@
     background-position: center;
     cursor: pointer;
     border: $overlay-color 0.5px solid;
-    }
 
-    .overlay__link:hover {
+    &:hover {
     background-color: $icon-color;
+    }
     }
 
     .overlay__icon {

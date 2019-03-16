@@ -533,6 +533,8 @@ body {
 
 .banner__title--pretitle {
   font-family: "KaushanScript-Regular", cursive;
+  font-weight: normal;
+  font-style: normal;
   font-size: 65px;
   color: #ffffff;
   margin-bottom: 30px;
@@ -595,6 +597,8 @@ body {
   margin: 0 auto;
   padding: 15px 0;
   font-family: "KaushanScript-Regular", cursive;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .card__list {
@@ -740,7 +744,7 @@ body {
 }
 
 .overlay__link {
-  padding: 12px;
+  padding: 10px;
   display: block;
   width: 54px;
   height: 54px;
